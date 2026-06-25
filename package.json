@@ -19,7 +19,7 @@
     "dist:protected": "node build-protected-release.js",
     "build": "electron-builder --dir",
     "build:win": "electron-builder --win",
-    "build:mac": "electron-builder --mac zip",
+    "build:mac": "electron-builder --mac dmg",
     "build:linux": "electron-builder --linux AppImage"
   },
   "build": {
@@ -64,7 +64,7 @@
     "mac": {
       "category": "public.app-category.utilities",
       "target": [
-        "zip"
+        "dmg"
       ],
       "artifactName": "${productName}-${version}-mac.${ext}"
     },

@@ -380,6 +380,7 @@ Additional release and support documentation is available in `docs/`.
 - [Support and Troubleshooting](./docs/SUPPORT_AND_TROUBLESHOOTING.md)
 - [Known Limitations](./docs/KNOWN_LIMITATIONS.md)
 - [Release Process](./docs/RELEASE_PROCESS.md)
+- [Windows and macOS Installer Guide](./docs/WINDOWS_AND_MAC_INSTALLER_GUIDE.md)
 - [Windows Hardware QA](./docs/WINDOWS_HARDWARE_QA.md)
 - [Installer and Upgrade QA](./docs/INSTALLER_AND_UPGRADE_QA.md)
 - [Code Signing and Windows Release](./docs/CODE_SIGNING_AND_WINDOWS_RELEASE.md)
