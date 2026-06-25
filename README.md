@@ -401,4 +401,4 @@ This project is feature-rich and locally functional, but public production relea
 
 ## License
 
-MIT
+GNU General Public License v3.0

@@ -4,7 +4,7 @@
   "description": "Privacy-first local-only Electron dashboard for keystroke visibility awareness, trusted devices, workspace protection, and accessibility.",
   "main": "src/main.js",
   "author": "bubblesthedev",
-  "license": "MIT",
+  "license": "GPL-3.0-only",
   "scripts": {
     "dev": "electron .",
     "start": "electron .",
