@@ -6,6 +6,4 @@ coverage/
 *.tmp
 *.bak
 build-protected-release.js
-command.sh
-commands.sh
 to-do.md
