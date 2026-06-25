@@ -1,6 +1,28 @@
 # Developer Anti Ghosting Keyboard Privacy Shield
 ## Change Log
 
+## v0.2.5 - 2026-06-25
+
+- Fixed the in-app support issue link so it opens the current GitHub issues page for `Developer-AG-Keyboard-Privacy-Shield` instead of the old `DAGKPS` path.
+- Added a new `SECURITY.md` policy with supported-version guidance, vulnerability reporting steps, safe diagnostics expectations, and security scope notes.
+- Updated `package.json`, `package-lock.json`, and release health version checks to align the app with `0.2.5`.
+- Changed the project license from MIT to `GPL-3.0-only` and updated bundled license files to match.
+
+## v0.1.5 - 2026-06-24
+
+- Added local-only macOS support for keyboard detection, system awareness, workspace monitoring, diagnostics, and standard packaged app launches.
+- Added a generic in-app support request action without exposing the underlying provider name.
+- Added a release version consistency script to enforce alignment between package metadata and the changelog.
+- Added release docs for Windows code signing, public support workflow, and stronger manual release gates.
+- Added Diagnostics Center, support bundle export, keyboard confidence scoring, scan comparison, session notes, release health controls, keyboard shortcuts, privacy overlay support, and one-click sharing presets.
+- Added a local automated test suite for settings, IPC, renderer smoke checks, and keyboard detection parsing.
+- Added stronger recovery behavior and clearer backup verification and restore messaging.
+- Improved Windows keyboard detection filtering to reduce duplicate HID and non-keyboard side interfaces.
+- Added local-only keyboard diagnostic tooling for Windows hardware QA.
+- Added public release documentation for privacy, support, limitations, security review, accessibility QA, hardware QA, installer QA, and release notes discipline.
+- Improved in-app release guidance, transparency wording, and keyboard detection explanations.
+- Tightened renderer focus visibility, dropdown clarity, long-name wrapping, and small-window behavior.
+
 ### V 0.1.0
 
 - Reworked keyboard detection to use Windows-connected device inventory through `pnputil`, replacing the less reliable path that was returning empty or inconsistent results on some systems.
