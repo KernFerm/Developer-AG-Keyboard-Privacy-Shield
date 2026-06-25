@@ -21,7 +21,7 @@ let mainWindow;
 let trayController;
 let overlayWindow;
 let isQuitting = false;
-const supportIssueUrl = "https://github.com/KernFerm/DAGKPS/issues";
+const supportIssueUrl = "https://github.com/KernFerm/Developer-AG-Keyboard-Privacy-Shield/issues";
 
 const storageContext = configureStoragePaths(app);
 const settingsManager = new SettingsManager(app);

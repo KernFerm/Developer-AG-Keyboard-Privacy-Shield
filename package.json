@@ -1,6 +1,6 @@
 {
   "name": "developer-anti-ghosting-keyboard-privacy-shield",
-  "version": "0.1.5",
+  "version": "0.2.5",
   "description": "Privacy-first local-only Electron dashboard for keystroke visibility awareness, trusted devices, workspace protection, and accessibility.",
   "main": "src/main.js",
   "author": "bubblesthedev",
