@@ -1,0 +1,85 @@
+{
+  "name": "developer-anti-ghosting-keyboard-privacy-shield",
+  "version": "0.1.5",
+  "description": "Privacy-first local-only Electron dashboard for keystroke visibility awareness, trusted devices, workspace protection, and accessibility.",
+  "main": "src/main.js",
+  "author": "bubblesthedev",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron .",
+    "start": "electron .",
+    "test": "node --test tests/*.test.js",
+    "lint": "eslint .",
+    "release:version-check": "node scripts/version-consistency-check.js",
+    "security-check": "node scripts/security-check.js",
+    "diagnose:keyboards": "node scripts/keyboard-diagnostic.js",
+    "qa:release": "npm run release:version-check && npm run lint && npm run test && npm run security-check && npm run build",
+    "prepare:protected": "node build-protected-release.js --prepare-only",
+    "pack:protected": "node build-protected-release.js --dir",
+    "dist:protected": "node build-protected-release.js",
+    "build": "electron-builder --dir",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac zip",
+    "build:linux": "electron-builder --linux AppImage"
+  },
+  "build": {
+    "appId": "local.dev.antighosting.privacyshield",
+    "compression": "maximum",
+    "productName": "Developer Anti Ghosting Keyboard Privacy Shield",
+    "directories": {
+      "buildResources": "build"
+    },
+    "files": [
+      "docs/**/*",
+      "extensions/**/*",
+      "src/**/*",
+      "scripts/**/*",
+      "tests/**/*",
+      "package.json",
+      "CHANGE-LOG.md",
+      "README.md",
+      "LICENSE"
+    ],
+    "win": {
+      "forceCodeSigning": false,
+      "signAndEditExecutable": false,
+      "icon": "icon.png",
+      "target": [
+        "portable",
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "license": "build/LICENSE.txt",
+      "include": "build/installer.nsh",
+      "createDesktopShortcut": true
+    },
+    "portable": {
+      "artifactName": "${productName}-Portable-${version}.${ext}",
+      "requestExecutionLevel": "user"
+    },
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": [
+        "zip"
+      ],
+      "artifactName": "${productName}-${version}-mac.${ext}"
+    },
+    "linux": {
+      "category": "Utility",
+      "target": [
+        "AppImage"
+      ],
+      "artifactName": "${productName}-${version}-${arch}.${ext}"
+    }
+  },
+  "devDependencies": {
+    "electron": "^42.5.0",
+    "electron-builder": "^26.15.3",
+    "eslint": "^10.5.0",
+    "globals": "^17.7.0"
+  }
+}

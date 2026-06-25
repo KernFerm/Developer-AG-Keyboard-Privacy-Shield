@@ -1,0 +1,14 @@
+{
+  "id": "protection-preset-library",
+  "name": "Protection Preset Library",
+  "version": "1.0.0",
+  "description": "Provides extra local-only protection mode presets for common developer and creator workflows.",
+  "category": "Protection",
+  "entryPoint": "manifest-only",
+  "approvalRequired": true,
+  "localOnly": true,
+  "permissions": [
+    "preset-library",
+    "mode-recommendations"
+  ]
+}

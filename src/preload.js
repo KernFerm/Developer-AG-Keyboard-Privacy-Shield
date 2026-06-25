@@ -1,0 +1,86 @@
+const { contextBridge, ipcRenderer } = require("electron");
+
+const channels = new Set([
+  "state:get",
+  "settings:update",
+  "settings:backup",
+  "settings:backup:verify",
+  "settings:restore",
+  "settings:backup:restoreSaved",
+  "settings:snapshot:create",
+  "settings:snapshot:restore",
+  "protection:set",
+  "protection:emergency",
+  "protection:emergencyPrepare",
+  "protection:restoreNormal",
+  "protection:quickHide",
+  "protection:mode",
+  "profiles:apply",
+  "windows:syncApp",
+  "wellbeing:startSession",
+  "wellbeing:stopSession",
+  "devices:trust",
+  "devices:setTrustLevel",
+  "devices:removeTrusted",
+  "devices:clearHistory",
+  "reports:generate",
+  "reports:preview",
+  "diagnostics:createSupportBundle",
+  "notes:add",
+  "notes:remove",
+  "presets:apply",
+  "overlay:setVisible",
+  "extensions:approve",
+  "extensions:revoke",
+  "extensions:refresh",
+  "refresh:all",
+  "support:open",
+  "app:exit"
+]);
+
+function invoke(channel, payload) {
+  if (!channels.has(channel)) {
+    throw new Error(`Blocked IPC channel: ${channel}`);
+  }
+  return ipcRenderer.invoke(channel, payload);
+}
+
+contextBridge.exposeInMainWorld("shieldApi", {
+  getState: () => invoke("state:get"),
+  updateSettings: (payload) => invoke("settings:update", payload),
+  backupSettings: () => invoke("settings:backup"),
+  verifyBackupSettings: (payload) => invoke("settings:backup:verify", payload),
+  restoreSettings: (payload) => invoke("settings:restore", payload),
+  restoreSavedBackup: (id) => invoke("settings:backup:restoreSaved", { id }),
+  createSnapshot: (label) => invoke("settings:snapshot:create", { label }),
+  restoreSnapshot: (id) => invoke("settings:snapshot:restore", { id }),
+  setProtection: (enabled) => invoke("protection:set", { enabled }),
+  triggerEmergency: () => invoke("protection:emergency"),
+  prepareEmergencyMode: () => invoke("protection:emergencyPrepare"),
+  restoreNormalProtection: () => invoke("protection:restoreNormal"),
+  setQuickHide: (enabled) => invoke("protection:quickHide", { enabled }),
+  setMode: (mode) => invoke("protection:mode", { mode }),
+  applyProfile: (profile) => invoke("profiles:apply", { profile }),
+  syncWithWindows: () => invoke("windows:syncApp"),
+  startWellbeingSession: () => invoke("wellbeing:startSession"),
+  stopWellbeingSession: () => invoke("wellbeing:stopSession"),
+  trustDevice: (payload) => invoke("devices:trust", payload),
+  setDeviceTrustLevel: (fingerprint, trustLevel) => invoke("devices:setTrustLevel", { fingerprint, trustLevel }),
+  removeTrustedDevice: (fingerprint) => invoke("devices:removeTrusted", { fingerprint }),
+  clearDeviceHistory: () => invoke("devices:clearHistory"),
+  generateReport: (payload) => invoke("reports:generate", payload),
+  previewReport: (payload) => invoke("reports:preview", payload),
+  createSupportBundle: () => invoke("diagnostics:createSupportBundle"),
+  addSessionNote: (text) => invoke("notes:add", { text }),
+  removeSessionNote: (id) => invoke("notes:remove", { id }),
+  applyPreset: (preset) => invoke("presets:apply", { preset }),
+  setOverlayVisible: (visible) => invoke("overlay:setVisible", { visible }),
+  approveExtension: (name) => invoke("extensions:approve", { name }),
+  revokeExtension: (name) => invoke("extensions:revoke", { name }),
+  refreshExtensions: () => invoke("extensions:refresh"),
+  refreshAll: () => invoke("refresh:all"),
+  openSupportRequest: () => invoke("support:open"),
+  exitApp: () => invoke("app:exit"),
+  onStateUpdate: (callback) => ipcRenderer.on("state:update", (_event, payload) => callback(payload)),
+  onNavigate: (callback) => ipcRenderer.on("app:navigate", (_event, payload) => callback(payload))
+});
