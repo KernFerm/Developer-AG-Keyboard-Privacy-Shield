@@ -1,0 +1,244 @@
+# Developer Anti Ghosting Keyboard Privacy Shield 0.2.7
+
+## Welcome 👋
+
+Thank you for downloading **Developer Anti Ghosting Keyboard Privacy Shield**.
+
+This app is built for developers, streamers, teachers, presenters, students, and privacy-conscious users who want better control over what their workspace reveals while typing, screen sharing, recording, or working in public.
+
+## What This App Is 🛡️
+
+Developer Anti Ghosting Keyboard Privacy Shield is a **local-only privacy desktop app**.
+
+It helps you:
+
+- review connected keyboards
+- mark trusted devices
+- check workspace exposure risk
+- prepare for screen sharing or recording
+- quickly reduce visible detail with privacy controls
+
+## What This App Does Not Do 🔒
+
+This app does **not**:
+
+- record your keystrokes
+- save what you type
+- upload your keyboard data
+- use analytics or telemetry
+- capture your clipboard, screen, microphone, or webcam
+
+Everything is designed to stay on your device.
+
+## Which Download Should You Use? 📦
+
+You may see two Windows files:
+
+### `Developer Anti Ghosting Keyboard Privacy Shield-Portable-0.2.7.exe`
+
+Choose this if you want:
+
+- a portable version
+- no traditional installer flow
+- to run the app from a folder or removable drive
+- a simpler try-it-first option
+
+### `Developer Anti Ghosting Keyboard Privacy Shield Setup 0.2.7.exe`
+
+Choose this if you want:
+
+- the normal installer experience
+- Start Menu and desktop shortcut options
+- a more typical Windows app setup
+- easier long-term use on one machine
+
+## How To Set Up The Portable Version 🚀
+
+### 1. Download the portable file
+
+Use:
+
+`Developer Anti Ghosting Keyboard Privacy Shield-Portable-0.2.7.exe`
+
+### 2. Move it to a location you want to keep
+
+Good options:
+
+- `Desktop`
+- `Downloads`
+- `Documents`
+- a dedicated apps folder
+- a USB drive
+
+### 3. Run the file
+
+Double-click the portable `.exe`.
+
+If Windows shows a warning:
+
+- click `More info`
+- confirm the app name
+- click `Run anyway` if you trust the file source
+
+### 4. Let the app open
+
+The app should launch directly without a full install wizard.
+
+## How To Set Up The Installer Version 🧰
+
+### 1. Download the setup file
+
+Use:
+
+`Developer Anti Ghosting Keyboard Privacy Shield Setup 0.2.7.exe`
+
+### 2. Run the installer
+
+Double-click the setup `.exe`.
+
+If Windows shows a warning:
+
+- click `More info`
+- confirm the app name
+- click `Run anyway` if you trust the file source
+
+### 3. Follow the install steps
+
+The installer may let you:
+
+- choose an install location
+- create a desktop shortcut
+- add a Start Menu entry
+
+### 4. Finish installation
+
+After setup completes, launch the app from:
+
+- the desktop shortcut
+- the Start Menu
+- the installed app folder
+
+## First-Time Setup Inside The App ✅
+
+When the app opens:
+
+1. Keep **Protection On**.
+2. Open **Device Center**.
+3. Review the keyboards the app detects.
+4. Mark only the keyboards you recognize as trusted.
+5. Open **Workspace Center** before screen sharing, streaming, or presenting.
+6. Use **Emergency Privacy Mode** if you want a faster reduced-detail view.
+
+## How To Use It Every Day 💻
+
+### Before coding or working
+
+- open the app
+- confirm protection is enabled
+- check that your keyboard list looks normal
+
+### Before streaming or screen sharing
+
+- open **Workspace Center**
+- review workspace risk and privacy readiness
+- reduce visible detail if needed
+- enable **Emergency Privacy Mode** if you want a faster privacy response
+
+### When plugging in a new keyboard
+
+- open **Device Center**
+- review the new device entry
+- trust it only if you recognize it
+
+### If you work in public spaces
+
+- keep the app running during shared-space sessions
+- use privacy controls before joining meetings or recording
+- review visible risk before presenting
+
+## Troubleshooting 🛠️
+
+### The app will not open
+
+- fully close any previous app instance
+- try launching it again
+- restart Windows and try once more
+- if using the installer version, try launching it from the Start Menu
+
+### Windows warns me before opening it
+
+Windows can show SmartScreen prompts for newer or lesser-known apps.
+
+If you downloaded the file from the official project release page and trust it:
+
+- click `More info`
+- click `Run anyway`
+
+### No keyboards appear
+
+- restart the app
+- reconnect your USB keyboard
+- try plugging the keyboard into a different USB port
+- confirm Windows itself sees the device in Device Manager
+
+### A keyboard name looks generic
+
+That can happen when Windows only exposes a generic label.
+
+Try:
+
+- checking the device again after reconnecting it
+- comparing the device details shown in the app
+- trusting only devices you can clearly identify
+
+### Too many keyboards appear
+
+Some hardware exposes multiple keyboard-like interfaces.
+
+Try:
+
+- restarting the app
+- disconnecting unused devices
+- reviewing which device entries are built-in, USB, or Bluetooth
+
+### The app looks too crowded
+
+Try:
+
+- increasing the window size
+- using the app on a larger display
+- turning on accessibility options if available
+
+### I installed it but cannot find it
+
+For the installer version, check:
+
+- the desktop
+- the Start Menu
+- the install folder you selected during setup
+
+For the portable version, check the folder where you saved the `.exe`.
+
+## Tips For Best Results 💡
+
+- Trust only devices you recognize.
+- Review the app before every meeting, stream, or presentation.
+- Use the portable build for quick testing.
+- Use the setup build for regular day-to-day use on one computer.
+- Restart the app after major hardware changes.
+
+## Need Help? 🙋
+
+If something does not look right:
+
+- confirm you are using version `0.2.7`
+- restart the app
+- review Device Center and Workspace Center
+- create a local report from the app if available
+- report the issue through the project GitHub page
+
+## Quick Recommendation ⭐
+
+Choose the **Portable** file if you want the fastest way to try the app.
+
+Choose the **Setup** file if you want the normal install experience for regular daily use.
