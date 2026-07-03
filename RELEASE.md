@@ -39,8 +39,9 @@ You may see two Windows files:
 Choose this if you want:
 
 - a portable version
+- an external drive is required
 - no traditional installer flow
-- to run the app from a folder or removable drive
+- to carry it between compatible Windows PCs
 - a simpler try-it-first option
 
 ### `Developer Anti Ghosting Keyboard Privacy Shield Setup 0.2.7.exe`
@@ -60,19 +61,19 @@ Use:
 
 `Developer Anti Ghosting Keyboard Privacy Shield-Portable-0.2.7.exe`
 
-### 2. Move it to a location you want to keep
+### 2. Copy it to your external drive
 
-Good options:
+An external drive is required for the portable version.
 
-- `Desktop`
-- `Downloads`
-- `Documents`
-- a dedicated apps folder
+Good examples:
+
 - a USB drive
+- an external SSD
+- another removable external storage device
 
 ### 3. Run the file
 
-Double-click the portable `.exe`.
+Open the external drive and double-click the portable `.exe`.
 
 If Windows shows a warning:
 
@@ -82,7 +83,7 @@ If Windows shows a warning:
 
 ### 4. Let the app open
 
-The app should launch directly without a full install wizard.
+The app should launch directly from the external drive without a full install wizard.
 
 ## How To Set Up The Installer Version 🧰
 
@@ -223,7 +224,7 @@ For the portable version, check the folder where you saved the `.exe`.
 
 - Trust only devices you recognize.
 - Review the app before every meeting, stream, or presentation.
-- Use the portable build for quick testing.
+- Use the portable build from an external drive when you want a carry-with-you setup.
 - Use the setup build for regular day-to-day use on one computer.
 - Restart the app after major hardware changes.
 
@@ -239,6 +240,6 @@ If something does not look right:
 
 ## Quick Recommendation ⭐
 
-Choose the **Portable** file if you want the fastest way to try the app.
+Choose the **Portable** file if you want to run the app from an external drive across compatible Windows PCs.
 
 Choose the **Setup** file if you want the normal install experience for regular daily use.
