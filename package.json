@@ -77,9 +77,10 @@
     }
   },
   "devDependencies": {
-    "electron": "^43.0.0",
+    "electron": "43.0.0",
     "electron-builder": "^26.15.3",
     "eslint": "^10.6.0",
-    "globals": "^17.7.0"
+    "globals": "^17.7.0",
+    "javascript-obfuscator": "^5.4.3"
   }
 }

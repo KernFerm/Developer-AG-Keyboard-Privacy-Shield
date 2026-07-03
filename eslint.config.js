@@ -2,6 +2,9 @@ const globals = require("globals");
 
 module.exports = [
   {
+    ignores: [".protected-release/**", "dist/**", "node_modules/**"]
+  },
+  {
     files: ["src/**/*.js", "scripts/**/*.js"],
     languageOptions: {
       ecmaVersion: "latest",
