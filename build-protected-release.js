@@ -216,16 +216,8 @@ function runCommand(command, commandArgs, cwd) {
 }
 
 function runNpmCommand(commandArgs, cwd) {
-  if (process.platform === "win32") {
-    const command = commandArgs
-      .map((arg) => (/\s/.test(arg) ? `"${arg}"` : arg))
-      .join(" ");
-
-    runCommand("cmd.exe", ["/d", "/s", "/c", `npm ${command}`], cwd);
-    return;
-  }
-
-  runCommand("npm", commandArgs, cwd);
+  const npmExecutable = process.platform === "win32" ? "npm.cmd" : "npm";
+  runCommand(npmExecutable, commandArgs, cwd);
 }
 
 function main() {
