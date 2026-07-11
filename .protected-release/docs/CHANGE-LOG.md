@@ -1,11 +1,5 @@
-# Change Log
-
-## v0.3.0 - 2026-07-11
-
-- Updated `README.md`, `RELEASE.md`, `SECURITY.md`, and `CHANGE-LOG.md` to align release-facing documentation with version `0.3.0`.
-- Updated macOS release wording to reflect the current `.dmg` packaging flow instead of the older zip wording.
-- Added a dedicated `docs/DMG_BUILD_INSTRUCTIONS.md` handoff guide for Mac developers building the installer.
-- Clarified standard and protected macOS packaging expectations in the release documentation.
+# Developer Anti Ghosting Keyboard Privacy Shield
+## Change Log
 
 ## v0.2.5 - 2026-06-25
 

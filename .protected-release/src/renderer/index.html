@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"
+    />
+    <title>Developer Anti Ghosting Keyboard Privacy Shield</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true">
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+      <div class="orb orb-three"></div>
+      <div class="grid-haze"></div>
+    </div>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-badge">DAG</div>
+          <div>
+            <h1>Privacy Mission Control</h1>
+            <p>Local-only keystroke visibility protection</p>
+          </div>
+        </div>
+        <nav id="sidebar-nav" class="sidebar-nav"></nav>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Developer Anti Ghosting Keyboard Privacy Shield</p>
+            <h2 id="page-title">Dashboard</h2>
+          </div>
+          <div class="topbar-actions">
+            <div class="topbar-dropdown">
+              <button id="mode-select" class="dropdown-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">Protection Mode</button>
+              <div id="mode-menu" class="dropdown-menu hidden" role="listbox" aria-label="Protection mode"></div>
+            </div>
+            <button id="toggle-protection" class="primary">Protection On</button>
+            <button id="emergency-button" class="danger">Emergency Privacy Mode</button>
+            <div class="topbar-dropdown">
+              <button id="menu-select" class="dropdown-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">Menu</button>
+              <div id="menu-menu" class="dropdown-menu hidden" role="listbox" aria-label="Quick menu"></div>
+            </div>
+          </div>
+        </header>
+
+        <section id="onboarding" class="panel onboarding hidden" aria-live="polite"></section>
+        <section id="hero" class="hero"></section>
+        <section id="quick-actions" class="quick-actions"></section>
+        <section id="cards-grid" class="cards-grid"></section>
+        <section id="detail-panels" class="detail-panels"></section>
+      </main>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

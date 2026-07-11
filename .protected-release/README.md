@@ -291,7 +291,7 @@ npm run dev
   Build Windows packages.
 
 - `npm run build:mac`  
-  Build macOS `.dmg` output.
+  Build macOS zip output.
 
 - `npm run build:linux`  
   Build Linux AppImage output.

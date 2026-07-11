@@ -1,14 +1,12 @@
-# Developer Anti Ghosting Keyboard Privacy Shield 0.2.7
-
-## Welcome 👋
+# Developer Anti Ghosting Keyboard Privacy Shield 0.3.0
 
 Thank you for downloading **Developer Anti Ghosting Keyboard Privacy Shield**.
 
 This app is built for developers, streamers, teachers, presenters, students, and privacy-conscious users who want better control over what their workspace reveals while typing, screen sharing, recording, or working in public.
 
-## What This App Is 🛡️
+## What This App Is
 
-Developer Anti Ghosting Keyboard Privacy Shield is a **local-only privacy desktop app**.
+Developer Anti Ghosting Keyboard Privacy Shield is a local-only privacy desktop app.
 
 It helps you:
 
@@ -18,9 +16,9 @@ It helps you:
 - prepare for screen sharing or recording
 - quickly reduce visible detail with privacy controls
 
-## What This App Does Not Do 🔒
+## What This App Does Not Do
 
-This app does **not**:
+This app does not:
 
 - record your keystrokes
 - save what you type
@@ -30,11 +28,11 @@ This app does **not**:
 
 Everything is designed to stay on your device.
 
-## Which Download Should You Use? 📦
+## Which Download Should You Use?
 
-You may see two Windows files:
+You may see two Windows files.
 
-### `Developer Anti Ghosting Keyboard Privacy Shield-Portable-0.2.7.exe`
+### `Developer Anti Ghosting Keyboard Privacy Shield-Portable-0.3.0.exe`
 
 Choose this if you want:
 
@@ -44,7 +42,7 @@ Choose this if you want:
 - to carry it between compatible Windows PCs
 - a simpler try-it-first option
 
-### `Developer Anti Ghosting Keyboard Privacy Shield Setup 0.2.7.exe`
+### `Developer Anti Ghosting Keyboard Privacy Shield Setup 0.3.0.exe`
 
 Choose this if you want:
 
@@ -53,13 +51,22 @@ Choose this if you want:
 - a more typical Windows app setup
 - easier long-term use on one machine
 
-## How To Set Up The Portable Version 🚀
+### macOS `.dmg` - Coming Soon
+
+Choose this if you want:
+
+- the standard Mac install format
+- the recommended release format for macOS users
+- to open the disk image and drag the app into `Applications`
+- a normal Finder-based installation flow
+
+## How To Set Up The Portable Version
 
 ### 1. Download the portable file
 
 Use:
 
-`Developer Anti Ghosting Keyboard Privacy Shield-Portable-0.2.7.exe`
+`Developer Anti Ghosting Keyboard Privacy Shield-Portable-0.3.0.exe`
 
 ### 2. Copy it to your external drive
 
@@ -85,13 +92,13 @@ If Windows shows a warning:
 
 The app should launch directly from the external drive without a full install wizard.
 
-## How To Set Up The Installer Version 🧰
+## How To Set Up The Installer Version
 
 ### 1. Download the setup file
 
 Use:
 
-`Developer Anti Ghosting Keyboard Privacy Shield Setup 0.2.7.exe`
+`Developer Anti Ghosting Keyboard Privacy Shield Setup 0.3.0.exe`
 
 ### 2. Run the installer
 
@@ -119,7 +126,11 @@ After setup completes, launch the app from:
 - the Start Menu
 - the installed app folder
 
-## First-Time Setup Inside The App ✅
+## How To Set Up The macOS Version
+
+Coming soon.
+
+## First-Time Setup Inside The App
 
 When the app opens:
 
@@ -130,7 +141,7 @@ When the app opens:
 5. Open **Workspace Center** before screen sharing, streaming, or presenting.
 6. Use **Emergency Privacy Mode** if you want a faster reduced-detail view.
 
-## How To Use It Every Day 💻
+## How To Use It Every Day
 
 ### Before coding or working
 
@@ -157,13 +168,13 @@ When the app opens:
 - use privacy controls before joining meetings or recording
 - review visible risk before presenting
 
-## Troubleshooting 🛠️
+## Troubleshooting
 
 ### The app will not open
 
 - fully close any previous app instance
 - try launching it again
-- restart Windows and try once more
+- restart the computer and try once more
 - if using the installer version, try launching it from the Start Menu
 
 ### Windows warns me before opening it
@@ -175,16 +186,28 @@ If you downloaded the file from the official project release page and trust it:
 - click `More info`
 - click `Run anyway`
 
+### macOS warns me before opening it
+
+Unsigned or unnotarized Mac builds may trigger Gatekeeper warnings.
+
+If you trust the file source:
+
+- control-click or right-click the app
+- choose `Open`
+- confirm the prompt
+
+For wider public distribution, a signed and notarized `.dmg` is recommended.
+
 ### No keyboards appear
 
 - restart the app
 - reconnect your USB keyboard
 - try plugging the keyboard into a different USB port
-- confirm Windows itself sees the device in Device Manager
+- confirm the operating system itself sees the device
 
 ### A keyboard name looks generic
 
-That can happen when Windows only exposes a generic label.
+That can happen when the operating system only exposes a generic label.
 
 Try:
 
@@ -220,26 +243,34 @@ For the installer version, check:
 
 For the portable version, check the folder where you saved the `.exe`.
 
-## Tips For Best Results 💡
+For the macOS version, check:
+
+- `Applications`
+- the folder where the app was copied from the `.dmg`
+
+## Tips For Best Results
 
 - Trust only devices you recognize.
 - Review the app before every meeting, stream, or presentation.
 - Use the portable build from an external drive when you want a carry-with-you setup.
 - Use the setup build for regular day-to-day use on one computer.
+- Use the `.dmg` for normal Mac installation.
 - Restart the app after major hardware changes.
 
-## Need Help? 🙋
+## Need Help?
 
 If something does not look right:
 
-- confirm you are using version `0.2.7`
+- confirm you are using version `0.3.0`
 - restart the app
 - review Device Center and Workspace Center
 - create a local report from the app if available
 - report the issue through the project GitHub page
 
-## Quick Recommendation ⭐
+## Quick Recommendation
 
 Choose the **Portable** file if you want to run the app from an external drive across compatible Windows PCs.
 
-Choose the **Setup** file if you want the normal install experience for regular daily use.
+Choose the **Setup** file if you want the normal install experience for regular daily use on one Windows computer.
+
+The macOS **`.dmg`** release is coming soon.

@@ -1,25 +1,14 @@
 {
   "name": "developer-anti-ghosting-keyboard-privacy-shield",
-  "version": "0.3.0",
+  "version": "0.2.7",
   "description": "Privacy-first local-only Electron dashboard for keystroke visibility awareness, trusted devices, workspace protection, and accessibility.",
   "main": "src/main.js",
   "author": "bubblesthedev",
   "license": "GPL-3.0-only",
   "scripts": {
-    "dev": "electron .",
-    "start": "electron .",
-    "test": "node --test tests/*.test.js",
-    "lint": "eslint .",
-    "release:version-check": "node scripts/version-consistency-check.js",
-    "security-check": "node scripts/security-check.js",
-    "diagnose:keyboards": "node scripts/keyboard-diagnostic.js",
-    "qa:release": "npm run release:version-check && npm run lint && npm run test && npm run security-check && npm run build",
-    "prepare:protected": "node build-protected-release.js --prepare-only",
-    "pack:protected": "node build-protected-release.js --dir",
-    "dist:protected": "node build-protected-release.js",
     "build": "electron-builder --dir",
     "build:win": "electron-builder --win",
-    "build:mac": "electron-builder --mac dmg",
+    "build:mac": "electron-builder --mac zip",
     "build:linux": "electron-builder --linux AppImage"
   },
   "build": {
@@ -62,8 +51,6 @@
       "requestExecutionLevel": "user"
     },
     "mac": {
-      "forceCodeSigning": false,
-      "signAndEditExecutable": false,
       "category": "public.app-category.utilities",
       "target": [
         "dmg"
@@ -79,10 +66,10 @@
     }
   },
   "devDependencies": {
-    "electron": "43.1.0",
+    "electron": "43.0.0",
     "electron-builder": "^26.15.3",
-    "eslint": "^10.7.0",
+    "eslint": "^10.6.0",
     "globals": "^17.7.0",
-    "javascript-obfuscator": "^5.4.7"
+    "javascript-obfuscator": "^5.4.3"
   }
 }

@@ -8,8 +8,8 @@ Only the current public release version is supported for security fixes.
 
 | Version | Supported |
 | --- | --- |
-| 0.3.0 | Yes |
-| 0.2.7 and earlier | No |
+| 0.2.5 | Yes |
+| 0.2.4 and earlier | No |
 | Unreleased local builds | No |
 | Modified forks | No |
 
