@@ -216,8 +216,23 @@ function runCommand(command, commandArgs, cwd) {
 }
 
 function runNpmCommand(commandArgs, cwd) {
+  const npmCliPath = resolveNpmCliPath();
+  if (npmCliPath) {
+    runCommand(process.execPath, [npmCliPath, ...commandArgs], cwd);
+    return;
+  }
+
   const npmExecutable = process.platform === "win32" ? "npm.cmd" : "npm";
   runCommand(npmExecutable, commandArgs, cwd);
+}
+
+function resolveNpmCliPath() {
+  const candidates = [
+    path.join(path.dirname(process.execPath), "node_modules", "npm", "bin", "npm-cli.js"),
+    path.join(path.dirname(process.execPath), "..", "node_modules", "npm", "bin", "npm-cli.js")
+  ];
+
+  return candidates.find((candidate) => fs.existsSync(candidate)) || null;
 }
 
 function main() {
