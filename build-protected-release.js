@@ -155,7 +155,7 @@ function updateStagePackageJson() {
   pkg.scripts = {
     build: "electron-builder --dir",
     "build:win": "electron-builder --win",
-    "build:mac": "electron-builder --mac zip",
+    "build:mac": "electron-builder --mac dmg",
     "build:linux": "electron-builder --linux AppImage"
   };
 
@@ -178,7 +178,7 @@ function runBuilder() {
 
 function appendTargetArgs(builderArgs) {
   if (targetPlatform === "mac") {
-    builderArgs.push("--mac", "zip");
+    builderArgs.push("--mac", "dmg");
   } else if (targetPlatform === "linux") {
     builderArgs.push("--linux", "AppImage");
   } else {
