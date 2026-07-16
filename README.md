@@ -215,22 +215,6 @@ Current support includes:
 - Windows-aware local settings alignment
 - tray behavior and diagnostics
 
-### macOS
-
-macOS support is now included for:
-
-- keyboard inventory awareness
-- built-in, USB, and supported Bluetooth keyboard detection when local metadata is available
-- workspace monitoring
-- local diagnostics
-- standard packaged app usage
-
-Because macOS hardware metadata can vary by device and connection path, real hardware QA is still important before public release.
-
-### Linux
-
-The repository includes a Linux build target, but the main product experience is currently focused on Windows and macOS.
-
 ## Keyboard Detection Notes
 
 The app tries to show likely real physical keyboards instead of every low-level side-interface the operating system exposes.
@@ -245,92 +229,6 @@ The app attempts to:
 - show confidence information when naming is partial or generic
 
 Even with that logic, device naming can still vary across hardware, docks, hubs, Bluetooth stacks, and operating-system versions.
-
-## Development Setup
-
-### Requirements
-
-- Node.js
-- npm
-- VS Code recommended
-
-### Run In Development
-
-```powershell
-npm install
-npm run dev
-```
-
-### Useful Scripts
-
-- `npm run dev`  
-  Start the Electron app in development mode.
-
-- `npm run lint`  
-  Run ESLint.
-
-- `npm run test`  
-  Run the local automated test suite.
-
-- `npm run security-check`  
-  Verify required files and security-sensitive structure.
-
-- `npm run release:version-check`  
-  Verify `package.json`, `package-lock.json`, and `CHANGE-LOG.md` are aligned.
-
-- `npm run diagnose:keyboards`  
-  Generate a local-only keyboard detection diagnostic file.
-
-- `npm run qa:release`  
-  Run lint, tests, security checks, and build together.
-
-- `npm run build`  
-  Create an unpacked Electron build.
-
-- `npm run build:win`  
-  Build Windows packages.
-
-- `npm run build:mac`  
-  Build macOS `.dmg` output.
-
-- `npm run build:linux`  
-  Build Linux AppImage output.
-
-## Project Structure
-
-```text
-src/
-  main.js
-  preload.js
-  main/
-  modules/
-  renderer/
-scripts/
-build/
-extensions/
-tests/
-docs/
-```
-
-### Important Areas
-
-- `src/main.js`
-  Main Electron lifecycle, state publishing, tray wiring, and close behavior.
-
-- `src/preload.js`
-  Secure allowlisted bridge between renderer and main process.
-
-- `src/main/ipc.js`
-  IPC handlers with validation, sanitization, and explicit channel control.
-
-- `src/modules/`
-  Detection, monitoring, settings, protection, reports, diagnostics, and security utilities.
-
-- `src/renderer/`
-  UI rendering, dashboard sections, controls, and interaction logic.
-
-- `tests/`
-  Local automated tests for settings, IPC, detection parsing, workspace logic, and renderer smoke checks.
 
 ## Security Design
 
@@ -372,33 +270,7 @@ Diagnostics and local report ZIP files are intended to help with troubleshooting
 
 If you need to report a bug, create a local report ZIP from the app, find it in `Documents`, and attach it to a GitHub issue in the project repository.
 
-## Public Release Documentation
 
-Additional release and support documentation is available in `docs/`.
-
-- [Privacy Policy](./docs/PRIVACY_POLICY.md)
-- [Support and Troubleshooting](./docs/SUPPORT_AND_TROUBLESHOOTING.md)
-- [Known Limitations](./docs/KNOWN_LIMITATIONS.md)
-- [Release Process](./docs/RELEASE_PROCESS.md)
-- [Windows and macOS Installer Guide](./docs/WINDOWS_AND_MAC_INSTALLER_GUIDE.md)
-- [Windows Hardware QA](./docs/WINDOWS_HARDWARE_QA.md)
-- [Installer and Upgrade QA](./docs/INSTALLER_AND_UPGRADE_QA.md)
-- [Code Signing and Windows Release](./docs/CODE_SIGNING_AND_WINDOWS_RELEASE.md)
-- [Security Review](./docs/SECURITY_REVIEW.md)
-- [Accessibility QA](./docs/ACCESSIBILITY_QA.md)
-- [Production Readiness Checklist](./docs/PRODUCTION_READINESS_CHECKLIST.md)
-- [Support Workflow](./docs/SUPPORT_WORKFLOW.md)
-- [Release Notes Template](./docs/RELEASE_NOTES_TEMPLATE.md)
-
-## Current Status
-
-This project is feature-rich and locally functional, but public production release still depends on:
-
-- real hardware QA across more machines
-- accessibility QA across the full app
-- installer and upgrade validation
-- release signing and packaging review
-- continued keyboard detection stabilization across more setups
 
 ## License
 
