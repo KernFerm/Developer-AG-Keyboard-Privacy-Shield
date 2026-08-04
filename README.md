@@ -272,6 +272,24 @@ If you need to report a bug, create a local report ZIP from the app, find it in 
 
 
 
+### macOS
+
+macOS support is now included for:
+
+- keyboard inventory awareness
+- built-in, USB, and supported Bluetooth keyboard detection when local metadata is available
+- workspace monitoring
+- local diagnostics
+- standard packaged app usage
+
+Because macOS hardware metadata can vary by device and connection path, real hardware QA is still important before public release.
+
+### Linux
+
+The repository includes a Linux build target, but the main product experience is currently focused on Windows and macOS.
+
+
+
 ## License
 
 GNU General Public License v3.0
