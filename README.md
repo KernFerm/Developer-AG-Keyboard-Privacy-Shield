@@ -288,6 +288,103 @@ Because macOS hardware metadata can vary by device and connection path, real har
 
 The repository includes a Linux build target, but the main product experience is currently focused on Windows and macOS.
 
+## Development Setup
+
+### Requirements
+
+- Node.js
+- npm
+- VS Code recommended
+
+### Run In Development
+
+```powershell
+npm install
+npm run dev
+```
+
+### Useful Scripts
+
+- `npm run dev`  
+  Start the Electron app in development mode.
+
+- `npm run lint`  
+  Run ESLint.
+
+- `npm run test`  
+  Run the local automated test suite.
+
+- `npm run security-check`  
+  Verify required files and security-sensitive structure.
+
+- `npm run release:version-check`  
+  Verify `package.json`, `package-lock.json`, and `CHANGE-LOG.md` are aligned.
+
+- `npm run diagnose:keyboards`  
+  Generate a local-only keyboard detection diagnostic file.
+
+- `npm run qa:release`  
+  Run lint, tests, security checks, and build together.
+
+- `npm run build`  
+  Create an unpacked Electron build.
+
+- `npm run build:win`  
+  Build Windows packages.
+
+- `npm run build:mac`  
+  Build macOS `.dmg` output.
+
+- `npm run build:linux`  
+  Build Linux AppImage output.
+
+## Project Structure
+
+```text
+src/
+  main.js
+  preload.js
+  main/
+  modules/
+  renderer/
+scripts/
+build/
+extensions/
+tests/
+docs/
+```
+
+### Important Areas
+
+- `src/main.js`
+  Main Electron lifecycle, state publishing, tray wiring, and close behavior.
+
+- `src/preload.js`
+  Secure allowlisted bridge between renderer and main process.
+
+- `src/main/ipc.js`
+  IPC handlers with validation, sanitization, and explicit channel control.
+
+- `src/modules/`
+  Detection, monitoring, settings, protection, reports, diagnostics, and security utilities.
+
+- `src/renderer/`
+  UI rendering, dashboard sections, controls, and interaction logic.
+
+- `tests/`
+  Local automated tests for settings, IPC, detection parsing, workspace logic, and renderer smoke checks.
+
+
+  ## Current Status
+
+This project is feature-rich and locally functional, but public production release still depends on:
+
+- real hardware QA across more machines
+- accessibility QA across the full app
+- installer and upgrade validation
+- release signing and packaging review
+- continued keyboard detection stabilization across more setups
+
 
 
 ## License
