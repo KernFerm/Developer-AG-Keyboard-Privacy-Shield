@@ -215,63 +215,6 @@ Current support includes:
 - Windows-aware local settings alignment
 - tray behavior and diagnostics
 
-## Keyboard Detection Notes
-
-The app tries to show likely real physical keyboards instead of every low-level side-interface the operating system exposes.
-
-That matters because some systems represent a single keyboard as multiple underlying device entries.
-
-The app attempts to:
-
-- collapse duplicate-looking entries
-- prefer stronger keyboard signals
-- keep branded names when the operating system exposes them
-- show confidence information when naming is partial or generic
-
-Even with that logic, device naming can still vary across hardware, docks, hubs, Bluetooth stacks, and operating-system versions.
-
-## Security Design
-
-The app uses Electron security-focused defaults, including:
-
-- context isolation
-- sandboxed renderer processes
-- no Node integration in the renderer
-- allowlisted IPC channels
-- sanitized settings and input payloads
-- encrypted local settings and backups
-- strict local-only behavior for core data flows
-
-## Accessibility
-
-Accessibility support includes:
-
-- High Contrast Mode
-- Large Text Mode
-- Reduced Motion Mode
-- Dyslexia-Friendly Font Option
-- Simplified Mode
-- keyboard-friendly controls
-
-Accessibility settings are stored locally and designed to remain usable alongside privacy features.
-
-## Reports And Diagnostics
-
-The app can generate local-only reports and diagnostics for:
-
-- privacy readiness
-- workspace readiness
-- accessibility readiness
-- device security
-- protection coverage
-- local audit summaries
-
-Diagnostics and local report ZIP files are intended to help with troubleshooting without including typed content. When generated from the app, the ZIP is saved to the end user's `Documents` folder.
-
-If you need to report a bug, create a local report ZIP from the app, find it in `Documents`, and attach it to a GitHub issue in the project repository.
-
-
-
 ### macOS
 
 macOS support is now included for:
@@ -287,6 +230,21 @@ Because macOS hardware metadata can vary by device and connection path, real har
 ### Linux
 
 The repository includes a Linux build target, but the main product experience is currently focused on Windows and macOS.
+
+## Keyboard Detection Notes
+
+The app tries to show likely real physical keyboards instead of every low-level side-interface the operating system exposes.
+
+That matters because some systems represent a single keyboard as multiple underlying device entries.
+
+The app attempts to:
+
+- collapse duplicate-looking entries
+- prefer stronger keyboard signals
+- keep branded names when the operating system exposes them
+- show confidence information when naming is partial or generic
+
+Even with that logic, device naming can still vary across hardware, docks, hubs, Bluetooth stacks, and operating-system versions.
 
 ## Development Setup
 
@@ -374,8 +332,74 @@ docs/
 - `tests/`
   Local automated tests for settings, IPC, detection parsing, workspace logic, and renderer smoke checks.
 
+## Security Design
 
-  ## Current Status
+The app uses Electron security-focused defaults, including:
+
+- context isolation
+- sandboxed renderer processes
+- no Node integration in the renderer
+- allowlisted IPC channels
+- sanitized settings and input payloads
+- encrypted local settings and backups
+- strict local-only behavior for core data flows
+
+### Dependency Security
+
+Version `0.3.10` includes a dependency maintenance pass that resolves the current `npm audit` findings without forcing breaking package downgrades.
+
+The lockfile is expected to report:
+
+- `npm audit`: `found 0 vulnerabilities`
+- `npm outdated`: no package output
+
+## Accessibility
+
+Accessibility support includes:
+
+- High Contrast Mode
+- Large Text Mode
+- Reduced Motion Mode
+- Dyslexia-Friendly Font Option
+- Simplified Mode
+- keyboard-friendly controls
+
+Accessibility settings are stored locally and designed to remain usable alongside privacy features.
+
+## Reports And Diagnostics
+
+The app can generate local-only reports and diagnostics for:
+
+- privacy readiness
+- workspace readiness
+- accessibility readiness
+- device security
+- protection coverage
+- local audit summaries
+
+Diagnostics and local report ZIP files are intended to help with troubleshooting without including typed content. When generated from the app, the ZIP is saved to the end user's `Documents` folder.
+
+If you need to report a bug, create a local report ZIP from the app, find it in `Documents`, and attach it to a GitHub issue in the project repository.
+
+## Public Release Documentation
+
+Additional release and support documentation is available in `docs/`.
+
+- [Privacy Policy](./docs/PRIVACY_POLICY.md)
+- [Support and Troubleshooting](./docs/SUPPORT_AND_TROUBLESHOOTING.md)
+- [Known Limitations](./docs/KNOWN_LIMITATIONS.md)
+- [Release Process](./docs/RELEASE_PROCESS.md)
+- [Windows and macOS Installer Guide](./docs/WINDOWS_AND_MAC_INSTALLER_GUIDE.md)
+- [Windows Hardware QA](./docs/WINDOWS_HARDWARE_QA.md)
+- [Installer and Upgrade QA](./docs/INSTALLER_AND_UPGRADE_QA.md)
+- [Code Signing and Windows Release](./docs/CODE_SIGNING_AND_WINDOWS_RELEASE.md)
+- [Security Review](./docs/SECURITY_REVIEW.md)
+- [Accessibility QA](./docs/ACCESSIBILITY_QA.md)
+- [Production Readiness Checklist](./docs/PRODUCTION_READINESS_CHECKLIST.md)
+- [Support Workflow](./docs/SUPPORT_WORKFLOW.md)
+- [Release Notes Template](./docs/RELEASE_NOTES_TEMPLATE.md)
+
+## Current Status
 
 This project is feature-rich and locally functional, but public production release still depends on:
 
@@ -385,7 +409,7 @@ This project is feature-rich and locally functional, but public production relea
 - release signing and packaging review
 - continued keyboard detection stabilization across more setups
 
-
+Current documented release version: `0.3.10`.
 
 ## License
 
