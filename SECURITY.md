@@ -8,8 +8,8 @@ Only the current public release version is supported for security fixes.
 
 | Version | Supported |
 | --- | --- |
-| 0.3.0 | Yes |
-| 0.2.7 and earlier | No |
+| 0.3.10 | Yes |
+| 0.3.0 and earlier | No |
 | Unreleased local builds | No |
 | Modified forks | No |
 
@@ -51,6 +51,24 @@ It should not include:
 - screenshots
 - personal documents
 - personal file paths
+
+## Dependency Security Baseline
+
+The `0.3.10` release includes dependency updates and overrides for the current npm advisory set affecting `brace-expansion`, `fast-uri`, `js-yaml`, and `undici`.
+
+Before publishing a release, run:
+
+```powershell
+npm audit
+npm outdated
+npm test
+```
+
+Expected results:
+
+- `npm audit` reports `found 0 vulnerabilities`
+- `npm outdated` prints no package table
+- the local automated test suite passes
 
 ## Response Expectations
 
