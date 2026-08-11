@@ -1,4 +1,4 @@
-# Developer Anti Ghosting Keyboard Privacy Shield 0.3.0
+# Developer Anti Ghosting Keyboard Privacy Shield 0.3.10
 
 Thank you for downloading **Developer Anti Ghosting Keyboard Privacy Shield**.
 
@@ -32,7 +32,7 @@ Everything is designed to stay on your device.
 
 You may see two Windows files.
 
-### `Developer Anti Ghosting Keyboard Privacy Shield-Portable-0.3.0.exe`
+### `Developer Anti Ghosting Keyboard Privacy Shield-Portable-0.3.10.exe`
 
 Choose this if you want:
 
@@ -42,7 +42,7 @@ Choose this if you want:
 - to carry it between compatible Windows PCs
 - a simpler try-it-first option
 
-### `Developer Anti Ghosting Keyboard Privacy Shield Setup 0.3.0.exe`
+### `Developer Anti Ghosting Keyboard Privacy Shield Setup 0.3.10.exe`
 
 Choose this if you want:
 
@@ -66,7 +66,7 @@ Choose this if you want:
 
 Use:
 
-`Developer Anti Ghosting Keyboard Privacy Shield-Portable-0.3.0.exe`
+`Developer Anti Ghosting Keyboard Privacy Shield-Portable-0.3.10.exe`
 
 ### 2. Copy it to your external drive
 
@@ -98,7 +98,7 @@ The app should launch directly from the external drive without a full install wi
 
 Use:
 
-`Developer Anti Ghosting Keyboard Privacy Shield Setup 0.3.0.exe`
+`Developer Anti Ghosting Keyboard Privacy Shield Setup 0.3.10.exe`
 
 ### 2. Run the installer
 
@@ -140,6 +140,16 @@ When the app opens:
 4. Mark only the keyboards you recognize as trusted.
 5. Open **Workspace Center** before screen sharing, streaming, or presenting.
 6. Use **Emergency Privacy Mode** if you want a faster reduced-detail view.
+
+## Maintenance Notes For 0.3.10
+
+This release refreshes the npm dependency tree and lockfile to clear current security audit findings.
+
+Verified release checks:
+
+- `npm audit` reports `found 0 vulnerabilities`
+- `npm outdated` reports no packages
+- `npm test` passes the local automated test suite
 
 ## How To Use It Every Day
 
@@ -186,17 +196,9 @@ If you downloaded the file from the official project release page and trust it:
 - click `More info`
 - click `Run anyway`
 
-### macOS warns me before opening it
+### macOS release availability
 
-Unsigned or unnotarized Mac builds may trigger Gatekeeper warnings.
-
-If you trust the file source:
-
-- control-click or right-click the app
-- choose `Open`
-- confirm the prompt
-
-For wider public distribution, a signed and notarized `.dmg` is recommended.
+The macOS `.dmg` release is coming soon.
 
 ### No keyboards appear
 
@@ -243,10 +245,7 @@ For the installer version, check:
 
 For the portable version, check the folder where you saved the `.exe`.
 
-For the macOS version, check:
-
-- `Applications`
-- the folder where the app was copied from the `.dmg`
+The macOS `.dmg` release is not available yet.
 
 ## Tips For Best Results
 
@@ -254,14 +253,14 @@ For the macOS version, check:
 - Review the app before every meeting, stream, or presentation.
 - Use the portable build from an external drive when you want a carry-with-you setup.
 - Use the setup build for regular day-to-day use on one computer.
-- Use the `.dmg` for normal Mac installation.
+- Watch for the macOS `.dmg` release when it becomes available.
 - Restart the app after major hardware changes.
 
 ## Need Help?
 
 If something does not look right:
 
-- confirm you are using version `0.3.0`
+- confirm you are using version `0.3.10`
 - restart the app
 - review Device Center and Workspace Center
 - create a local report from the app if available
