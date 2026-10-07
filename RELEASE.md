@@ -1,4 +1,4 @@
-# Developer Anti Ghosting Keyboard Privacy Shield 0.3.10
+# Developer Anti Ghosting Keyboard Privacy Shield 0.4.50
 
 Thank you for downloading **Developer Anti Ghosting Keyboard Privacy Shield**.
 
@@ -32,7 +32,7 @@ Everything is designed to stay on your device.
 
 You may see two Windows files.
 
-### `Developer Anti Ghosting Keyboard Privacy Shield-Portable-0.3.10.exe`
+### `Developer Anti Ghosting Keyboard Privacy Shield-Portable-0.4.50.exe`
 
 Choose this if you want:
 
@@ -42,7 +42,7 @@ Choose this if you want:
 - to carry it between compatible Windows PCs
 - a simpler try-it-first option
 
-### `Developer Anti Ghosting Keyboard Privacy Shield Setup 0.3.10.exe`
+### `Developer Anti Ghosting Keyboard Privacy Shield Setup 0.4.50.exe`
 
 Choose this if you want:
 
@@ -66,7 +66,7 @@ Choose this if you want:
 
 Use:
 
-`Developer Anti Ghosting Keyboard Privacy Shield-Portable-0.3.10.exe`
+`Developer Anti Ghosting Keyboard Privacy Shield-Portable-0.4.50.exe`
 
 ### 2. Copy it to your external drive
 
@@ -98,7 +98,7 @@ The app should launch directly from the external drive without a full install wi
 
 Use:
 
-`Developer Anti Ghosting Keyboard Privacy Shield Setup 0.3.10.exe`
+`Developer Anti Ghosting Keyboard Privacy Shield Setup 0.4.50.exe`
 
 ### 2. Run the installer
 
@@ -141,7 +141,7 @@ When the app opens:
 5. Open **Workspace Center** before screen sharing, streaming, or presenting.
 6. Use **Emergency Privacy Mode** if you want a faster reduced-detail view.
 
-## Maintenance Notes For 0.3.10
+## Maintenance Notes For 0.4.50
 
 This release refreshes the npm dependency tree and lockfile to clear current security audit findings.
 
@@ -260,7 +260,7 @@ The macOS `.dmg` release is not available yet.
 
 If something does not look right:
 
-- confirm you are using version `0.3.10`
+- confirm you are using version `0.4.50`
 - restart the app
 - review Device Center and Workspace Center
 - create a local report from the app if available

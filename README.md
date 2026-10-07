@@ -346,7 +346,7 @@ The app uses Electron security-focused defaults, including:
 
 ### Dependency Security
 
-Version `0.3.10` includes a dependency maintenance pass that resolves the current `npm audit` findings without forcing breaking package downgrades.
+Version `0.4.50` includes a dependency maintenance pass that resolves the current `npm audit` findings without forcing breaking package downgrades.
 
 The lockfile is expected to report:
 
@@ -409,7 +409,7 @@ This project is feature-rich and locally functional, but public production relea
 - release signing and packaging review
 - continued keyboard detection stabilization across more setups
 
-Current documented release version: `0.3.10`.
+Current documented release version: `0.4.50`.
 
 ## License
 

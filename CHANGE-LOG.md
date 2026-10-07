@@ -1,9 +1,9 @@
 # Change Log
 
-## v0.3.10 - 2026-08-11
+## v0.4.50 - 2026-10-07
 
-- Updated npm dependencies and lockfile metadata for the `0.3.10` maintenance release.
-- Resolved npm audit findings for `brace-expansion`, `fast-uri`, `js-yaml`, and `undici` without using `npm audit fix --force`.
+- Updated npm dependencies and lockfile metadata for the `0.4.50` maintenance release.
+- Resolved npm audit findings, including the `brace-expansion` and `sprintf-js` dependency chains, without using `npm audit fix --force`.
 - Added package overrides for the vulnerable transitive glob/minimatch chain while keeping `javascript-obfuscator` on the current major version.
 - Re-aligned `electron-builder` to the current registry `latest` version, `26.15.3`, so `npm outdated` reports cleanly.
 - Verified the release dependency state with `npm audit`, `npm outdated`, and the local automated test suite.

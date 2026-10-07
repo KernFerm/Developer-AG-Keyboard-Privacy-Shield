@@ -8,7 +8,7 @@ Only the current public release version is supported for security fixes.
 
 | Version | Supported |
 | --- | --- |
-| 0.3.10 | Yes |
+| 0.4.50 | Yes |
 | 0.3.0 and earlier | No |
 | Unreleased local builds | No |
 | Modified forks | No |
@@ -54,7 +54,7 @@ It should not include:
 
 ## Dependency Security Baseline
 
-The `0.3.10` release includes dependency updates and overrides for the current npm advisory set affecting `brace-expansion`, `fast-uri`, `js-yaml`, and `undici`.
+The `0.4.50` release includes dependency updates and overrides for the current npm advisory set, including the `brace-expansion` and `sprintf-js` dependency chains.
 
 Before publishing a release, run:
 
